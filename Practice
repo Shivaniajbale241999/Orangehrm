@@ -1,0 +1,13 @@
+public class SetPosition 
+{
+	public static void main(String[] args) 
+	{
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\sai\\Desktop\\Selenium\\Jar\\chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		Dimension dim=new Dimension(500,600);
+		driver.manage().window().setSize(dim);
+		Point pt = new Point(200,250);
+		driver.manage().window().setPosition(pt);
+	}
+}
